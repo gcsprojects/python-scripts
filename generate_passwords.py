@@ -1,4 +1,6 @@
-#!/usr/bin/env python3
+# Simple script that generates random passwords
+# Takes input from the user on how long the password should be
+# And how many passwords to generate
 
 import random
 import string
@@ -26,11 +28,8 @@ def generate_password():
 print(f"Generating {num_passwords} Passwords...\n")
 print("\n")
 
-#print("-----Passwords------")
 print("-"*password_length)
 while counter <= num_passwords:
 	print(generate_password())
 	counter = counter + 1
 print("-"*password_length)
-
-#print("-------End----------")
